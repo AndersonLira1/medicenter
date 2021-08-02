@@ -1,0 +1,465 @@
+/* PROJETO EM AULA.. JÁ PENSANDO EM RESPONSIVIDADE */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 120px;
+    display: flex;
+    justify-content: center; 
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    width: 990px;  
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none; 
+    text-transform: uppercase; 
+    color: #727272;
+}
+nav .active a, 
+nav a:hover {
+    background-color: #39aae1;
+    color: white;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg'); 
+    background-position: center; 
+    background-size: cover; 
+    height: 670px;
+}
+.column {
+    flex-direction: column; 
+}
+.banner-headline {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+/* AREA DE TEXTOS */
+.banner-headline h1 {
+    color: #ffffff;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555; 
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+.banner-headline h2 {
+    color: #ffffff;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+.banner-options {
+    height: 210px;
+    display: flex;
+}
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+.banner1 {
+    background-color: #39aae1;
+}
+.banner2 {
+    background-color: #0079c7;
+}
+.banner3 {
+    background-color: #2b4c99;
+}
+.banner-title {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+.banner-desc {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner-options a {
+    display: inline-block; 
+    border: 1px solid #ffffff;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.opening-hours {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(82, 116, 158);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* PARTE GERAL ABAIXO DO BANNER */
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2; 
+}
+#geral aside {
+    flex: 1;
+}
+
+.widjet-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widjet-title-text {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold; 
+}
+.widjet-title-bar {
+    width: 50px;
+    height: 3px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+article a {
+    text-decoration: none;
+}
+article .news-data {
+    display: flex;
+}
+article .news-pested-at {
+    background-color: #2b4c99;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .news-coments {
+    background-color: #39aae1;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+}
+article .news-thumbnail {
+    margin-top: 30px;
+}
+article .news-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+article .news-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    color: black;
+}
+
+.news-resume {
+   color: #5c5c5c;
+   line-height: 20px; 
+   font-size: 15px;
+   margin-bottom:30px; 
+}
+
+/* PARTE DIREITA DEPARTAMENTS */
+.widjet-body-right {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.widjet-body-in {
+    width: 150px;
+    height: 150px;
+    background-color: #39aae1;
+    margin-bottom: 40px;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px black;
+}
+.widjet-body-in h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 55px;
+    transition: all .5s linear;
+}
+.widjet-body-in:hover {
+    transition-duration: 1s;
+    transform: scale(1.1);
+    width: 160px;
+    height: 160px;
+}
+
+/* PARTE DE MAKE AN APPOINTMENT */
+.widjet-body-contact img {
+    width: 25px;
+    margin-bottom: 15px;
+    display: flex;
+}
+.widjet-phone,
+.widjet-email,
+.widjet-contact {
+    display: flex;
+    color: #5c5c5c;
+}
+.widjet-body-contact p{
+    margin-left: 10px;
+}
+
+/* RODAPÉ DO SITE */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+}
+.footer-menu {
+    display: flex;
+    flex: 1;  
+}
+.footer-menu a{
+    display: block; 
+    text-decoration: none;
+    padding: 20px;
+    color: #ffffff;
+}
+.fm1, .fm2, .fm3 {
+   flex: 1;
+   color: #ffffff;
+   border-radius: 15px;
+   margin-left: 5px;
+}
+.fm1 {
+    background-color: #39aae1;
+}
+.fm2 {
+    background-color: #0079c7;
+}
+.fm3 {
+    background-color: #2b4c99;
+}
+.footer-area {
+    display: flex;
+}
+.footer-areaitem {
+    flex: 1;
+    color: #ffffff;
+    margin: 10px;
+    line-height: 20px;
+}
+.flexColumn {
+    flex-direction: column;
+}
+footer .widjet-title-text {
+    color: #ffffff;
+}
+.footer-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.footer-desc {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.footer-text {
+    color: #948f8f;
+    font-size: 15px;
+}
+.footer-text2 p{
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+.footer-text-n {
+    height: 100px;
+    color: #948f8f;
+    font-size: 15px;
+    margin-top: 115px;
+}
+.rodape {
+    display: flex;;
+}
+.footer-img {
+    width: 150px;
+}
+.footer-img img{
+    height: 28px;
+    width: 31px;
+    border-radius: 5px;
+}
+.footer-copy {
+    height: 40px;
+    color: #948f8f;
+    border-top: 1px solid #2c2c2c;
+    line-height: 40px; /* A fonte fica no meio */
+    margin-top: 30px;
+}
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm-line {
+    height: 3px;
+    background-color: #39aae1;
+}
+
+@media (max-width: 988px) {
+    .banner-headline {
+        padding: 20px;
+    }
+    #geral section,
+    #geral aside {
+        padding: 10px;
+    }
+    .footer-copy {
+        padding-left: 10px;
+    }
+    header .container {
+        flex-direction: column;
+    }
+    .logo {
+        padding: 10px;
+    }
+}
+@media (min-width: 700px) and (max-width: 740px) {
+    header .container {
+        padding-left: 30px;
+    }
+}
+@media (max-width: 700px) {
+    .banner-headline {
+        padding: 20px;
+    }
+    .banner-headline h1 {
+        font-size: 55px;
+    }
+    .banner-headline h2 {
+        font-size: 17px;
+    }
+    .banner-options {
+        height: auto;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+    .footer-menu {
+        flex-direction: column;
+    }
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-copy {
+        padding-left: 20px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none; 
+        position: absolute;
+        left: 0;
+        width: 100%; 
+        background-color: #ffffff;
+    }
+    header {
+        height: auto;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    } 
+}
+@media (max-width: 360px) {
+    .widjet {
+        margin-top: 55px;
+    }
+}
+@media (max-width: 329px) {
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+    .banner-headline h1 {
+        font-size: 40px;
+    }
+    .banner-headline h2 {
+        font-size: 15px;
+    }
+}
+@media (max-width: 320px) {
+    section {
+        margin-left: 10px;
+    }
+    aside {
+        margin: 5px;
+        margin-right: 15px;
+    }
+}
